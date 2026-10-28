@@ -1,0 +1,841 @@
+tehsil,year,season,rainfall_mm,temperature_c
+Nagpur Urban,2010,Monsoon,1386.2,28.5
+Nagpur Urban,2010,Post-Monsoon,100.0,23.93
+Nagpur Urban,2010,Pre-Monsoon,12.3,34.58
+Nagpur Urban,2010,Winter,29.0,21.34
+Nagpur Urban,2011,Monsoon,1004.8,27.79
+Nagpur Urban,2011,Post-Monsoon,2.9,23.13
+Nagpur Urban,2011,Pre-Monsoon,77.0,32.62
+Nagpur Urban,2011,Winter,14.0,20.89
+Nagpur Urban,2012,Monsoon,1268.6,27.74
+Nagpur Urban,2012,Post-Monsoon,35.2,22.83
+Nagpur Urban,2012,Pre-Monsoon,5.6,33.49
+Nagpur Urban,2012,Winter,14.7,21.71
+Nagpur Urban,2013,Monsoon,1513.2,27.11
+Nagpur Urban,2013,Post-Monsoon,160.3,22.66
+Nagpur Urban,2013,Pre-Monsoon,28.4,33.57
+Nagpur Urban,2013,Winter,27.1,21.42
+Nagpur Urban,2014,Monsoon,892.2,29.16
+Nagpur Urban,2014,Post-Monsoon,21.1,23.7
+Nagpur Urban,2014,Pre-Monsoon,65.6,32.18
+Nagpur Urban,2014,Winter,42.3,20.83
+Nagpur Urban,2015,Monsoon,1207.6,27.97
+Nagpur Urban,2015,Post-Monsoon,11.9,24.58
+Nagpur Urban,2015,Pre-Monsoon,124.6,31.55
+Nagpur Urban,2015,Winter,32.7,21.91
+Nagpur Urban,2016,Monsoon,1139.6,28.03
+Nagpur Urban,2016,Post-Monsoon,71.3,22.09
+Nagpur Urban,2016,Pre-Monsoon,41.8,34.16
+Nagpur Urban,2016,Winter,16.4,22.32
+Nagpur Urban,2017,Monsoon,1034.9,28.21
+Nagpur Urban,2017,Post-Monsoon,43.6,23.84
+Nagpur Urban,2017,Pre-Monsoon,41.3,33.74
+Nagpur Urban,2017,Winter,2.7,21.57
+Nagpur Urban,2018,Monsoon,975.8,27.2
+Nagpur Urban,2018,Post-Monsoon,0.9,24.71
+Nagpur Urban,2018,Pre-Monsoon,52.6,33.66
+Nagpur Urban,2018,Winter,37.6,21.4
+Nagpur Urban,2019,Monsoon,1256.4,28.98
+Nagpur Urban,2019,Post-Monsoon,66.2,22.66
+Nagpur Urban,2019,Pre-Monsoon,21.9,33.66
+Nagpur Urban,2019,Winter,39.6,20.04
+Nagpur Urban,2020,Monsoon,1142.4,27.72
+Nagpur Urban,2020,Post-Monsoon,68.3,22.74
+Nagpur Urban,2020,Pre-Monsoon,112.2,31.63
+Nagpur Urban,2020,Winter,51.6,19.28
+Nagpur Urban,2021,Monsoon,1049.0,27.79
+Nagpur Urban,2021,Post-Monsoon,35.1,23.27
+Nagpur Urban,2021,Pre-Monsoon,62.5,32.12
+Nagpur Urban,2021,Winter,28.5,21.16
+Nagpur Urban,2022,Monsoon,1524.7,28.13
+Nagpur Urban,2022,Post-Monsoon,94.2,21.86
+Nagpur Urban,2022,Pre-Monsoon,9.6,34.12
+Nagpur Urban,2022,Winter,76.6,19.97
+Nagpur Urban,2023,Monsoon,1201.0,28.86
+Nagpur Urban,2023,Post-Monsoon,42.6,22.76
+Nagpur Urban,2023,Pre-Monsoon,140.7,31.11
+Nagpur Urban,2023,Winter,15.2,21.0
+Nagpur Urban,2024,Monsoon,1413.8,28.47
+Nagpur Urban,2024,Post-Monsoon,36.2,23.25
+Nagpur Urban,2024,Pre-Monsoon,116.9,32.18
+Nagpur Urban,2024,Winter,24.3,21.35
+Nagpur Rural,2010,Monsoon,1176.5,28.26
+Nagpur Rural,2010,Post-Monsoon,96.4,23.74
+Nagpur Rural,2010,Pre-Monsoon,10.8,34.29
+Nagpur Rural,2010,Winter,24.4,21.09
+Nagpur Rural,2011,Monsoon,842.4,27.52
+Nagpur Rural,2011,Post-Monsoon,3.4,22.88
+Nagpur Rural,2011,Pre-Monsoon,60.4,32.57
+Nagpur Rural,2011,Winter,10.6,20.48
+Nagpur Rural,2012,Monsoon,1036.9,27.46
+Nagpur Rural,2012,Post-Monsoon,33.7,22.5
+Nagpur Rural,2012,Pre-Monsoon,4.5,33.27
+Nagpur Rural,2012,Winter,11.1,21.48
+Nagpur Rural,2013,Monsoon,1251.0,26.73
+Nagpur Rural,2013,Post-Monsoon,123.9,22.5
+Nagpur Rural,2013,Pre-Monsoon,22.5,33.41
+Nagpur Rural,2013,Winter,31.1,20.94
+Nagpur Rural,2014,Monsoon,738.8,29.03
+Nagpur Rural,2014,Post-Monsoon,11.6,23.92
+Nagpur Rural,2014,Pre-Monsoon,62.7,32.05
+Nagpur Rural,2014,Winter,43.1,20.57
+Nagpur Rural,2015,Monsoon,1055.1,27.7
+Nagpur Rural,2015,Post-Monsoon,10.0,24.14
+Nagpur Rural,2015,Pre-Monsoon,119.3,31.42
+Nagpur Rural,2015,Winter,40.4,21.74
+Nagpur Rural,2016,Monsoon,1047.1,27.74
+Nagpur Rural,2016,Post-Monsoon,52.6,21.8
+Nagpur Rural,2016,Pre-Monsoon,35.2,34.0
+Nagpur Rural,2016,Winter,13.1,22.19
+Nagpur Rural,2017,Monsoon,823.0,27.95
+Nagpur Rural,2017,Post-Monsoon,64.1,23.52
+Nagpur Rural,2017,Pre-Monsoon,29.5,33.61
+Nagpur Rural,2017,Winter,1.9,21.4
+Nagpur Rural,2018,Monsoon,825.7,27.02
+Nagpur Rural,2018,Post-Monsoon,0.7,24.68
+Nagpur Rural,2018,Pre-Monsoon,39.5,33.68
+Nagpur Rural,2018,Winter,25.7,21.54
+Nagpur Rural,2019,Monsoon,1021.9,28.78
+Nagpur Rural,2019,Post-Monsoon,68.2,22.47
+Nagpur Rural,2019,Pre-Monsoon,13.7,33.49
+Nagpur Rural,2019,Winter,26.8,20.04
+Nagpur Rural,2020,Monsoon,1039.9,27.54
+Nagpur Rural,2020,Post-Monsoon,57.8,22.51
+Nagpur Rural,2020,Pre-Monsoon,80.7,31.64
+Nagpur Rural,2020,Winter,39.4,18.91
+Nagpur Rural,2021,Monsoon,1006.0,27.5
+Nagpur Rural,2021,Post-Monsoon,71.8,22.87
+Nagpur Rural,2021,Pre-Monsoon,65.1,32.01
+Nagpur Rural,2021,Winter,13.6,20.69
+Nagpur Rural,2022,Monsoon,1383.8,27.74
+Nagpur Rural,2022,Post-Monsoon,89.0,21.58
+Nagpur Rural,2022,Pre-Monsoon,9.6,33.94
+Nagpur Rural,2022,Winter,59.5,19.68
+Nagpur Rural,2023,Monsoon,1025.8,28.62
+Nagpur Rural,2023,Post-Monsoon,56.1,22.45
+Nagpur Rural,2023,Pre-Monsoon,120.9,30.9
+Nagpur Rural,2023,Winter,10.3,20.5
+Nagpur Rural,2024,Monsoon,1234.8,28.09
+Nagpur Rural,2024,Post-Monsoon,51.8,22.84
+Nagpur Rural,2024,Pre-Monsoon,106.8,32.21
+Nagpur Rural,2024,Winter,20.2,20.88
+Kamptee,2010,Monsoon,1386.2,28.5
+Kamptee,2010,Post-Monsoon,100.0,23.93
+Kamptee,2010,Pre-Monsoon,12.3,34.58
+Kamptee,2010,Winter,29.0,21.34
+Kamptee,2011,Monsoon,1004.8,27.79
+Kamptee,2011,Post-Monsoon,2.9,23.13
+Kamptee,2011,Pre-Monsoon,77.0,32.62
+Kamptee,2011,Winter,14.0,20.89
+Kamptee,2012,Monsoon,1268.6,27.74
+Kamptee,2012,Post-Monsoon,35.2,22.83
+Kamptee,2012,Pre-Monsoon,5.6,33.49
+Kamptee,2012,Winter,14.7,21.71
+Kamptee,2013,Monsoon,1513.2,27.11
+Kamptee,2013,Post-Monsoon,160.3,22.66
+Kamptee,2013,Pre-Monsoon,28.4,33.57
+Kamptee,2013,Winter,27.1,21.42
+Kamptee,2014,Monsoon,892.2,29.16
+Kamptee,2014,Post-Monsoon,21.1,23.7
+Kamptee,2014,Pre-Monsoon,65.6,32.18
+Kamptee,2014,Winter,42.3,20.83
+Kamptee,2015,Monsoon,1207.6,27.97
+Kamptee,2015,Post-Monsoon,11.9,24.58
+Kamptee,2015,Pre-Monsoon,124.6,31.55
+Kamptee,2015,Winter,32.7,21.91
+Kamptee,2016,Monsoon,1139.6,28.03
+Kamptee,2016,Post-Monsoon,71.3,22.09
+Kamptee,2016,Pre-Monsoon,41.8,34.16
+Kamptee,2016,Winter,16.4,22.32
+Kamptee,2017,Monsoon,1034.9,28.21
+Kamptee,2017,Post-Monsoon,43.6,23.84
+Kamptee,2017,Pre-Monsoon,41.3,33.74
+Kamptee,2017,Winter,2.7,21.57
+Kamptee,2018,Monsoon,975.8,27.2
+Kamptee,2018,Post-Monsoon,0.9,24.71
+Kamptee,2018,Pre-Monsoon,52.6,33.66
+Kamptee,2018,Winter,37.6,21.4
+Kamptee,2019,Monsoon,1256.4,28.98
+Kamptee,2019,Post-Monsoon,66.2,22.66
+Kamptee,2019,Pre-Monsoon,21.9,33.66
+Kamptee,2019,Winter,39.6,20.04
+Kamptee,2020,Monsoon,1142.4,27.72
+Kamptee,2020,Post-Monsoon,68.3,22.74
+Kamptee,2020,Pre-Monsoon,112.2,31.63
+Kamptee,2020,Winter,51.6,19.28
+Kamptee,2021,Monsoon,1049.0,27.79
+Kamptee,2021,Post-Monsoon,35.1,23.27
+Kamptee,2021,Pre-Monsoon,62.5,32.12
+Kamptee,2021,Winter,28.5,21.16
+Kamptee,2022,Monsoon,1524.7,28.13
+Kamptee,2022,Post-Monsoon,94.2,21.86
+Kamptee,2022,Pre-Monsoon,9.6,34.12
+Kamptee,2022,Winter,76.6,19.97
+Kamptee,2023,Monsoon,1201.0,28.86
+Kamptee,2023,Post-Monsoon,42.6,22.76
+Kamptee,2023,Pre-Monsoon,140.7,31.11
+Kamptee,2023,Winter,15.2,21.0
+Kamptee,2024,Monsoon,1413.8,28.47
+Kamptee,2024,Post-Monsoon,36.2,23.25
+Kamptee,2024,Pre-Monsoon,116.9,32.18
+Kamptee,2024,Winter,24.3,21.35
+Hingna,2010,Monsoon,1176.5,28.26
+Hingna,2010,Post-Monsoon,96.4,23.74
+Hingna,2010,Pre-Monsoon,10.8,34.29
+Hingna,2010,Winter,24.4,21.09
+Hingna,2011,Monsoon,842.4,27.52
+Hingna,2011,Post-Monsoon,3.4,22.88
+Hingna,2011,Pre-Monsoon,60.4,32.57
+Hingna,2011,Winter,10.6,20.48
+Hingna,2012,Monsoon,1036.9,27.46
+Hingna,2012,Post-Monsoon,33.7,22.5
+Hingna,2012,Pre-Monsoon,4.5,33.27
+Hingna,2012,Winter,11.1,21.48
+Hingna,2013,Monsoon,1251.0,26.73
+Hingna,2013,Post-Monsoon,123.9,22.5
+Hingna,2013,Pre-Monsoon,22.5,33.41
+Hingna,2013,Winter,31.1,20.94
+Hingna,2014,Monsoon,738.8,29.03
+Hingna,2014,Post-Monsoon,11.6,23.92
+Hingna,2014,Pre-Monsoon,62.7,32.05
+Hingna,2014,Winter,43.1,20.57
+Hingna,2015,Monsoon,1055.1,27.7
+Hingna,2015,Post-Monsoon,10.0,24.14
+Hingna,2015,Pre-Monsoon,119.3,31.42
+Hingna,2015,Winter,40.4,21.74
+Hingna,2016,Monsoon,1047.1,27.74
+Hingna,2016,Post-Monsoon,52.6,21.8
+Hingna,2016,Pre-Monsoon,35.2,34.0
+Hingna,2016,Winter,13.1,22.19
+Hingna,2017,Monsoon,823.0,27.95
+Hingna,2017,Post-Monsoon,64.1,23.52
+Hingna,2017,Pre-Monsoon,29.5,33.61
+Hingna,2017,Winter,1.9,21.4
+Hingna,2018,Monsoon,825.7,27.02
+Hingna,2018,Post-Monsoon,0.7,24.68
+Hingna,2018,Pre-Monsoon,39.5,33.68
+Hingna,2018,Winter,25.7,21.54
+Hingna,2019,Monsoon,1021.9,28.78
+Hingna,2019,Post-Monsoon,68.2,22.47
+Hingna,2019,Pre-Monsoon,13.7,33.49
+Hingna,2019,Winter,26.8,20.04
+Hingna,2020,Monsoon,1039.9,27.54
+Hingna,2020,Post-Monsoon,57.8,22.51
+Hingna,2020,Pre-Monsoon,80.7,31.64
+Hingna,2020,Winter,39.4,18.91
+Hingna,2021,Monsoon,1006.0,27.5
+Hingna,2021,Post-Monsoon,71.8,22.87
+Hingna,2021,Pre-Monsoon,65.1,32.01
+Hingna,2021,Winter,13.6,20.69
+Hingna,2022,Monsoon,1383.8,27.74
+Hingna,2022,Post-Monsoon,89.0,21.58
+Hingna,2022,Pre-Monsoon,9.6,33.94
+Hingna,2022,Winter,59.5,19.68
+Hingna,2023,Monsoon,1025.8,28.62
+Hingna,2023,Post-Monsoon,56.1,22.45
+Hingna,2023,Pre-Monsoon,120.9,30.9
+Hingna,2023,Winter,10.3,20.5
+Hingna,2024,Monsoon,1234.8,28.09
+Hingna,2024,Post-Monsoon,51.8,22.84
+Hingna,2024,Pre-Monsoon,106.8,32.21
+Hingna,2024,Winter,20.2,20.88
+Katol,2010,Monsoon,1169.4,27.73
+Katol,2010,Post-Monsoon,103.0,23.17
+Katol,2010,Pre-Monsoon,10.2,33.41
+Katol,2010,Winter,22.4,20.4
+Katol,2011,Monsoon,927.9,26.82
+Katol,2011,Post-Monsoon,1.7,22.43
+Katol,2011,Pre-Monsoon,58.4,31.71
+Katol,2011,Winter,10.1,20.4
+Katol,2012,Monsoon,1088.9,26.89
+Katol,2012,Post-Monsoon,27.0,22.1
+Katol,2012,Pre-Monsoon,5.0,32.23
+Katol,2012,Winter,11.4,20.87
+Katol,2013,Monsoon,1319.2,26.33
+Katol,2013,Post-Monsoon,118.2,21.98
+Katol,2013,Pre-Monsoon,28.3,32.33
+Katol,2013,Winter,30.5,20.7
+Katol,2014,Monsoon,775.2,28.37
+Katol,2014,Post-Monsoon,14.9,23.49
+Katol,2014,Pre-Monsoon,50.3,31.22
+Katol,2014,Winter,55.8,20.12
+Katol,2015,Monsoon,1086.9,27.02
+Katol,2015,Post-Monsoon,12.0,23.88
+Katol,2015,Pre-Monsoon,117.1,30.48
+Katol,2015,Winter,44.0,21.07
+Katol,2016,Monsoon,1045.5,27.27
+Katol,2016,Post-Monsoon,46.2,21.63
+Katol,2016,Pre-Monsoon,28.3,33.08
+Katol,2016,Winter,15.2,21.71
+Katol,2017,Monsoon,835.0,27.39
+Katol,2017,Post-Monsoon,67.0,23.06
+Katol,2017,Pre-Monsoon,23.0,32.78
+Katol,2017,Winter,5.7,21.24
+Katol,2018,Monsoon,770.4,26.6
+Katol,2018,Post-Monsoon,1.4,24.66
+Katol,2018,Pre-Monsoon,35.2,32.76
+Katol,2018,Winter,21.6,20.98
+Katol,2019,Monsoon,1098.1,28.27
+Katol,2019,Post-Monsoon,76.3,21.86
+Katol,2019,Pre-Monsoon,21.3,32.35
+Katol,2019,Winter,30.9,19.38
+Katol,2020,Monsoon,1091.8,26.94
+Katol,2020,Post-Monsoon,62.0,22.05
+Katol,2020,Pre-Monsoon,75.7,30.72
+Katol,2020,Winter,46.3,18.45
+Katol,2021,Monsoon,986.9,26.93
+Katol,2021,Post-Monsoon,63.7,22.23
+Katol,2021,Pre-Monsoon,74.0,31.04
+Katol,2021,Winter,15.8,20.36
+Katol,2022,Monsoon,1421.4,27.24
+Katol,2022,Post-Monsoon,84.2,21.05
+Katol,2022,Pre-Monsoon,7.9,33.17
+Katol,2022,Winter,47.6,19.38
+Katol,2023,Monsoon,1065.6,27.96
+Katol,2023,Post-Monsoon,56.3,21.99
+Katol,2023,Pre-Monsoon,116.5,29.9
+Katol,2023,Winter,12.0,20.35
+Katol,2024,Monsoon,1223.9,27.6
+Katol,2024,Post-Monsoon,76.7,22.21
+Katol,2024,Pre-Monsoon,107.3,31.13
+Katol,2024,Winter,37.5,20.26
+Narkhed,2010,Monsoon,1169.4,27.73
+Narkhed,2010,Post-Monsoon,103.0,23.17
+Narkhed,2010,Pre-Monsoon,10.2,33.41
+Narkhed,2010,Winter,22.4,20.4
+Narkhed,2011,Monsoon,927.9,26.82
+Narkhed,2011,Post-Monsoon,1.7,22.43
+Narkhed,2011,Pre-Monsoon,58.4,31.71
+Narkhed,2011,Winter,10.1,20.4
+Narkhed,2012,Monsoon,1088.9,26.89
+Narkhed,2012,Post-Monsoon,27.0,22.1
+Narkhed,2012,Pre-Monsoon,5.0,32.23
+Narkhed,2012,Winter,11.4,20.87
+Narkhed,2013,Monsoon,1319.2,26.33
+Narkhed,2013,Post-Monsoon,118.2,21.98
+Narkhed,2013,Pre-Monsoon,28.3,32.33
+Narkhed,2013,Winter,30.5,20.7
+Narkhed,2014,Monsoon,775.2,28.37
+Narkhed,2014,Post-Monsoon,14.9,23.49
+Narkhed,2014,Pre-Monsoon,50.3,31.22
+Narkhed,2014,Winter,55.8,20.12
+Narkhed,2015,Monsoon,1086.9,27.02
+Narkhed,2015,Post-Monsoon,12.0,23.88
+Narkhed,2015,Pre-Monsoon,117.1,30.48
+Narkhed,2015,Winter,44.0,21.07
+Narkhed,2016,Monsoon,1045.5,27.27
+Narkhed,2016,Post-Monsoon,46.2,21.63
+Narkhed,2016,Pre-Monsoon,28.3,33.08
+Narkhed,2016,Winter,15.2,21.71
+Narkhed,2017,Monsoon,835.0,27.39
+Narkhed,2017,Post-Monsoon,67.0,23.06
+Narkhed,2017,Pre-Monsoon,23.0,32.78
+Narkhed,2017,Winter,5.7,21.24
+Narkhed,2018,Monsoon,770.4,26.6
+Narkhed,2018,Post-Monsoon,1.4,24.66
+Narkhed,2018,Pre-Monsoon,35.2,32.76
+Narkhed,2018,Winter,21.6,20.98
+Narkhed,2019,Monsoon,1098.1,28.27
+Narkhed,2019,Post-Monsoon,76.3,21.86
+Narkhed,2019,Pre-Monsoon,21.3,32.35
+Narkhed,2019,Winter,30.9,19.38
+Narkhed,2020,Monsoon,1091.8,26.94
+Narkhed,2020,Post-Monsoon,62.0,22.05
+Narkhed,2020,Pre-Monsoon,75.7,30.72
+Narkhed,2020,Winter,46.3,18.45
+Narkhed,2021,Monsoon,986.9,26.93
+Narkhed,2021,Post-Monsoon,63.7,22.23
+Narkhed,2021,Pre-Monsoon,74.0,31.04
+Narkhed,2021,Winter,15.8,20.36
+Narkhed,2022,Monsoon,1421.4,27.24
+Narkhed,2022,Post-Monsoon,84.2,21.05
+Narkhed,2022,Pre-Monsoon,7.9,33.17
+Narkhed,2022,Winter,47.6,19.38
+Narkhed,2023,Monsoon,1065.6,27.96
+Narkhed,2023,Post-Monsoon,56.3,21.99
+Narkhed,2023,Pre-Monsoon,116.5,29.9
+Narkhed,2023,Winter,12.0,20.35
+Narkhed,2024,Monsoon,1223.9,27.6
+Narkhed,2024,Post-Monsoon,76.7,22.21
+Narkhed,2024,Pre-Monsoon,107.3,31.13
+Narkhed,2024,Winter,37.5,20.26
+Savner,2010,Monsoon,1169.4,27.73
+Savner,2010,Post-Monsoon,103.0,23.17
+Savner,2010,Pre-Monsoon,10.2,33.41
+Savner,2010,Winter,22.4,20.4
+Savner,2011,Monsoon,927.9,26.82
+Savner,2011,Post-Monsoon,1.7,22.43
+Savner,2011,Pre-Monsoon,58.4,31.71
+Savner,2011,Winter,10.1,20.4
+Savner,2012,Monsoon,1088.9,26.89
+Savner,2012,Post-Monsoon,27.0,22.1
+Savner,2012,Pre-Monsoon,5.0,32.23
+Savner,2012,Winter,11.4,20.87
+Savner,2013,Monsoon,1319.2,26.33
+Savner,2013,Post-Monsoon,118.2,21.98
+Savner,2013,Pre-Monsoon,28.3,32.33
+Savner,2013,Winter,30.5,20.7
+Savner,2014,Monsoon,775.2,28.37
+Savner,2014,Post-Monsoon,14.9,23.49
+Savner,2014,Pre-Monsoon,50.3,31.22
+Savner,2014,Winter,55.8,20.12
+Savner,2015,Monsoon,1086.9,27.02
+Savner,2015,Post-Monsoon,12.0,23.88
+Savner,2015,Pre-Monsoon,117.1,30.48
+Savner,2015,Winter,44.0,21.07
+Savner,2016,Monsoon,1045.5,27.27
+Savner,2016,Post-Monsoon,46.2,21.63
+Savner,2016,Pre-Monsoon,28.3,33.08
+Savner,2016,Winter,15.2,21.71
+Savner,2017,Monsoon,835.0,27.39
+Savner,2017,Post-Monsoon,67.0,23.06
+Savner,2017,Pre-Monsoon,23.0,32.78
+Savner,2017,Winter,5.7,21.24
+Savner,2018,Monsoon,770.4,26.6
+Savner,2018,Post-Monsoon,1.4,24.66
+Savner,2018,Pre-Monsoon,35.2,32.76
+Savner,2018,Winter,21.6,20.98
+Savner,2019,Monsoon,1098.1,28.27
+Savner,2019,Post-Monsoon,76.3,21.86
+Savner,2019,Pre-Monsoon,21.3,32.35
+Savner,2019,Winter,30.9,19.38
+Savner,2020,Monsoon,1091.8,26.94
+Savner,2020,Post-Monsoon,62.0,22.05
+Savner,2020,Pre-Monsoon,75.7,30.72
+Savner,2020,Winter,46.3,18.45
+Savner,2021,Monsoon,986.9,26.93
+Savner,2021,Post-Monsoon,63.7,22.23
+Savner,2021,Pre-Monsoon,74.0,31.04
+Savner,2021,Winter,15.8,20.36
+Savner,2022,Monsoon,1421.4,27.24
+Savner,2022,Post-Monsoon,84.2,21.05
+Savner,2022,Pre-Monsoon,7.9,33.17
+Savner,2022,Winter,47.6,19.38
+Savner,2023,Monsoon,1065.6,27.96
+Savner,2023,Post-Monsoon,56.3,21.99
+Savner,2023,Pre-Monsoon,116.5,29.9
+Savner,2023,Winter,12.0,20.35
+Savner,2024,Monsoon,1223.9,27.6
+Savner,2024,Post-Monsoon,76.7,22.21
+Savner,2024,Pre-Monsoon,107.3,31.13
+Savner,2024,Winter,37.5,20.26
+Kalmeshwar,2010,Monsoon,1176.5,28.26
+Kalmeshwar,2010,Post-Monsoon,96.4,23.74
+Kalmeshwar,2010,Pre-Monsoon,10.8,34.29
+Kalmeshwar,2010,Winter,24.4,21.09
+Kalmeshwar,2011,Monsoon,842.4,27.52
+Kalmeshwar,2011,Post-Monsoon,3.4,22.88
+Kalmeshwar,2011,Pre-Monsoon,60.4,32.57
+Kalmeshwar,2011,Winter,10.6,20.48
+Kalmeshwar,2012,Monsoon,1036.9,27.46
+Kalmeshwar,2012,Post-Monsoon,33.7,22.5
+Kalmeshwar,2012,Pre-Monsoon,4.5,33.27
+Kalmeshwar,2012,Winter,11.1,21.48
+Kalmeshwar,2013,Monsoon,1251.0,26.73
+Kalmeshwar,2013,Post-Monsoon,123.9,22.5
+Kalmeshwar,2013,Pre-Monsoon,22.5,33.41
+Kalmeshwar,2013,Winter,31.1,20.94
+Kalmeshwar,2014,Monsoon,738.8,29.03
+Kalmeshwar,2014,Post-Monsoon,11.6,23.92
+Kalmeshwar,2014,Pre-Monsoon,62.7,32.05
+Kalmeshwar,2014,Winter,43.1,20.57
+Kalmeshwar,2015,Monsoon,1055.1,27.7
+Kalmeshwar,2015,Post-Monsoon,10.0,24.14
+Kalmeshwar,2015,Pre-Monsoon,119.3,31.42
+Kalmeshwar,2015,Winter,40.4,21.74
+Kalmeshwar,2016,Monsoon,1047.1,27.74
+Kalmeshwar,2016,Post-Monsoon,52.6,21.8
+Kalmeshwar,2016,Pre-Monsoon,35.2,34.0
+Kalmeshwar,2016,Winter,13.1,22.19
+Kalmeshwar,2017,Monsoon,823.0,27.95
+Kalmeshwar,2017,Post-Monsoon,64.1,23.52
+Kalmeshwar,2017,Pre-Monsoon,29.5,33.61
+Kalmeshwar,2017,Winter,1.9,21.4
+Kalmeshwar,2018,Monsoon,825.7,27.02
+Kalmeshwar,2018,Post-Monsoon,0.7,24.68
+Kalmeshwar,2018,Pre-Monsoon,39.5,33.68
+Kalmeshwar,2018,Winter,25.7,21.54
+Kalmeshwar,2019,Monsoon,1021.9,28.78
+Kalmeshwar,2019,Post-Monsoon,68.2,22.47
+Kalmeshwar,2019,Pre-Monsoon,13.7,33.49
+Kalmeshwar,2019,Winter,26.8,20.04
+Kalmeshwar,2020,Monsoon,1039.9,27.54
+Kalmeshwar,2020,Post-Monsoon,57.8,22.51
+Kalmeshwar,2020,Pre-Monsoon,80.7,31.64
+Kalmeshwar,2020,Winter,39.4,18.91
+Kalmeshwar,2021,Monsoon,1006.0,27.5
+Kalmeshwar,2021,Post-Monsoon,71.8,22.87
+Kalmeshwar,2021,Pre-Monsoon,65.1,32.01
+Kalmeshwar,2021,Winter,13.6,20.69
+Kalmeshwar,2022,Monsoon,1383.8,27.74
+Kalmeshwar,2022,Post-Monsoon,89.0,21.58
+Kalmeshwar,2022,Pre-Monsoon,9.6,33.94
+Kalmeshwar,2022,Winter,59.5,19.68
+Kalmeshwar,2023,Monsoon,1025.8,28.62
+Kalmeshwar,2023,Post-Monsoon,56.1,22.45
+Kalmeshwar,2023,Pre-Monsoon,120.9,30.9
+Kalmeshwar,2023,Winter,10.3,20.5
+Kalmeshwar,2024,Monsoon,1234.8,28.09
+Kalmeshwar,2024,Post-Monsoon,51.8,22.84
+Kalmeshwar,2024,Pre-Monsoon,106.8,32.21
+Kalmeshwar,2024,Winter,20.2,20.88
+Ramtek,2010,Monsoon,1340.9,28.25
+Ramtek,2010,Post-Monsoon,98.8,23.45
+Ramtek,2010,Pre-Monsoon,11.4,33.99
+Ramtek,2010,Winter,27.0,20.67
+Ramtek,2011,Monsoon,1048.5,27.37
+Ramtek,2011,Post-Monsoon,1.8,22.72
+Ramtek,2011,Pre-Monsoon,75.9,32.0
+Ramtek,2011,Winter,14.4,20.49
+Ramtek,2012,Monsoon,1251.5,27.46
+Ramtek,2012,Post-Monsoon,28.7,22.39
+Ramtek,2012,Pre-Monsoon,5.3,32.78
+Ramtek,2012,Winter,18.2,20.94
+Ramtek,2013,Monsoon,1515.7,26.94
+Ramtek,2013,Post-Monsoon,151.2,22.18
+Ramtek,2013,Pre-Monsoon,32.4,32.78
+Ramtek,2013,Winter,28.0,20.8
+Ramtek,2014,Monsoon,882.2,28.78
+Ramtek,2014,Post-Monsoon,26.4,23.38
+Ramtek,2014,Pre-Monsoon,53.2,31.6
+Ramtek,2014,Winter,53.8,20.22
+Ramtek,2015,Monsoon,1157.1,27.57
+Ramtek,2015,Post-Monsoon,15.0,24.19
+Ramtek,2015,Pre-Monsoon,121.0,30.88
+Ramtek,2015,Winter,39.7,21.1
+Ramtek,2016,Monsoon,1051.0,27.81
+Ramtek,2016,Post-Monsoon,52.7,21.86
+Ramtek,2016,Pre-Monsoon,37.7,33.54
+Ramtek,2016,Winter,19.1,21.75
+Ramtek,2017,Monsoon,975.4,27.97
+Ramtek,2017,Post-Monsoon,48.9,23.55
+Ramtek,2017,Pre-Monsoon,32.2,33.27
+Ramtek,2017,Winter,7.1,21.35
+Ramtek,2018,Monsoon,897.6,27.01
+Ramtek,2018,Post-Monsoon,2.5,24.45
+Ramtek,2018,Pre-Monsoon,47.3,33.06
+Ramtek,2018,Winter,36.2,20.91
+Ramtek,2019,Monsoon,1208.9,28.71
+Ramtek,2019,Post-Monsoon,76.8,22.12
+Ramtek,2019,Pre-Monsoon,30.3,32.8
+Ramtek,2019,Winter,41.3,19.46
+Ramtek,2020,Monsoon,1221.4,27.36
+Ramtek,2020,Post-Monsoon,80.8,22.34
+Ramtek,2020,Pre-Monsoon,118.5,30.7
+Ramtek,2020,Winter,62.2,18.58
+Ramtek,2021,Monsoon,1016.8,27.45
+Ramtek,2021,Post-Monsoon,43.2,22.7
+Ramtek,2021,Pre-Monsoon,80.4,31.3
+Ramtek,2021,Winter,27.3,20.55
+Ramtek,2022,Monsoon,1477.4,27.82
+Ramtek,2022,Post-Monsoon,85.2,21.38
+Ramtek,2022,Pre-Monsoon,8.5,33.58
+Ramtek,2022,Winter,51.5,19.51
+Ramtek,2023,Monsoon,1155.3,28.48
+Ramtek,2023,Post-Monsoon,41.8,22.43
+Ramtek,2023,Pre-Monsoon,135.4,30.36
+Ramtek,2023,Winter,17.7,20.53
+Ramtek,2024,Monsoon,1364.6,28.1
+Ramtek,2024,Post-Monsoon,49.4,22.73
+Ramtek,2024,Pre-Monsoon,120.2,31.32
+Ramtek,2024,Winter,37.8,20.49
+Mouda,2010,Monsoon,1340.9,28.25
+Mouda,2010,Post-Monsoon,98.8,23.45
+Mouda,2010,Pre-Monsoon,11.4,33.99
+Mouda,2010,Winter,27.0,20.67
+Mouda,2011,Monsoon,1048.5,27.37
+Mouda,2011,Post-Monsoon,1.8,22.72
+Mouda,2011,Pre-Monsoon,75.9,32.0
+Mouda,2011,Winter,14.4,20.49
+Mouda,2012,Monsoon,1251.5,27.46
+Mouda,2012,Post-Monsoon,28.7,22.39
+Mouda,2012,Pre-Monsoon,5.3,32.78
+Mouda,2012,Winter,18.2,20.94
+Mouda,2013,Monsoon,1515.7,26.94
+Mouda,2013,Post-Monsoon,151.2,22.18
+Mouda,2013,Pre-Monsoon,32.4,32.78
+Mouda,2013,Winter,28.0,20.8
+Mouda,2014,Monsoon,882.2,28.78
+Mouda,2014,Post-Monsoon,26.4,23.38
+Mouda,2014,Pre-Monsoon,53.2,31.6
+Mouda,2014,Winter,53.8,20.22
+Mouda,2015,Monsoon,1157.1,27.57
+Mouda,2015,Post-Monsoon,15.0,24.19
+Mouda,2015,Pre-Monsoon,121.0,30.88
+Mouda,2015,Winter,39.7,21.1
+Mouda,2016,Monsoon,1051.0,27.81
+Mouda,2016,Post-Monsoon,52.7,21.86
+Mouda,2016,Pre-Monsoon,37.7,33.54
+Mouda,2016,Winter,19.1,21.75
+Mouda,2017,Monsoon,975.4,27.97
+Mouda,2017,Post-Monsoon,48.9,23.55
+Mouda,2017,Pre-Monsoon,32.2,33.27
+Mouda,2017,Winter,7.1,21.35
+Mouda,2018,Monsoon,897.6,27.01
+Mouda,2018,Post-Monsoon,2.5,24.45
+Mouda,2018,Pre-Monsoon,47.3,33.06
+Mouda,2018,Winter,36.2,20.91
+Mouda,2019,Monsoon,1208.9,28.71
+Mouda,2019,Post-Monsoon,76.8,22.12
+Mouda,2019,Pre-Monsoon,30.3,32.8
+Mouda,2019,Winter,41.3,19.46
+Mouda,2020,Monsoon,1221.4,27.36
+Mouda,2020,Post-Monsoon,80.8,22.34
+Mouda,2020,Pre-Monsoon,118.5,30.7
+Mouda,2020,Winter,62.2,18.58
+Mouda,2021,Monsoon,1016.8,27.45
+Mouda,2021,Post-Monsoon,43.2,22.7
+Mouda,2021,Pre-Monsoon,80.4,31.3
+Mouda,2021,Winter,27.3,20.55
+Mouda,2022,Monsoon,1477.4,27.82
+Mouda,2022,Post-Monsoon,85.2,21.38
+Mouda,2022,Pre-Monsoon,8.5,33.58
+Mouda,2022,Winter,51.5,19.51
+Mouda,2023,Monsoon,1155.3,28.48
+Mouda,2023,Post-Monsoon,41.8,22.43
+Mouda,2023,Pre-Monsoon,135.4,30.36
+Mouda,2023,Winter,17.7,20.53
+Mouda,2024,Monsoon,1364.6,28.1
+Mouda,2024,Post-Monsoon,49.4,22.73
+Mouda,2024,Pre-Monsoon,120.2,31.32
+Mouda,2024,Winter,37.8,20.49
+Parseoni,2010,Monsoon,1340.9,28.25
+Parseoni,2010,Post-Monsoon,98.8,23.45
+Parseoni,2010,Pre-Monsoon,11.4,33.99
+Parseoni,2010,Winter,27.0,20.67
+Parseoni,2011,Monsoon,1048.5,27.37
+Parseoni,2011,Post-Monsoon,1.8,22.72
+Parseoni,2011,Pre-Monsoon,75.9,32.0
+Parseoni,2011,Winter,14.4,20.49
+Parseoni,2012,Monsoon,1251.5,27.46
+Parseoni,2012,Post-Monsoon,28.7,22.39
+Parseoni,2012,Pre-Monsoon,5.3,32.78
+Parseoni,2012,Winter,18.2,20.94
+Parseoni,2013,Monsoon,1515.7,26.94
+Parseoni,2013,Post-Monsoon,151.2,22.18
+Parseoni,2013,Pre-Monsoon,32.4,32.78
+Parseoni,2013,Winter,28.0,20.8
+Parseoni,2014,Monsoon,882.2,28.78
+Parseoni,2014,Post-Monsoon,26.4,23.38
+Parseoni,2014,Pre-Monsoon,53.2,31.6
+Parseoni,2014,Winter,53.8,20.22
+Parseoni,2015,Monsoon,1157.1,27.57
+Parseoni,2015,Post-Monsoon,15.0,24.19
+Parseoni,2015,Pre-Monsoon,121.0,30.88
+Parseoni,2015,Winter,39.7,21.1
+Parseoni,2016,Monsoon,1051.0,27.81
+Parseoni,2016,Post-Monsoon,52.7,21.86
+Parseoni,2016,Pre-Monsoon,37.7,33.54
+Parseoni,2016,Winter,19.1,21.75
+Parseoni,2017,Monsoon,975.4,27.97
+Parseoni,2017,Post-Monsoon,48.9,23.55
+Parseoni,2017,Pre-Monsoon,32.2,33.27
+Parseoni,2017,Winter,7.1,21.35
+Parseoni,2018,Monsoon,897.6,27.01
+Parseoni,2018,Post-Monsoon,2.5,24.45
+Parseoni,2018,Pre-Monsoon,47.3,33.06
+Parseoni,2018,Winter,36.2,20.91
+Parseoni,2019,Monsoon,1208.9,28.71
+Parseoni,2019,Post-Monsoon,76.8,22.12
+Parseoni,2019,Pre-Monsoon,30.3,32.8
+Parseoni,2019,Winter,41.3,19.46
+Parseoni,2020,Monsoon,1221.4,27.36
+Parseoni,2020,Post-Monsoon,80.8,22.34
+Parseoni,2020,Pre-Monsoon,118.5,30.7
+Parseoni,2020,Winter,62.2,18.58
+Parseoni,2021,Monsoon,1016.8,27.45
+Parseoni,2021,Post-Monsoon,43.2,22.7
+Parseoni,2021,Pre-Monsoon,80.4,31.3
+Parseoni,2021,Winter,27.3,20.55
+Parseoni,2022,Monsoon,1477.4,27.82
+Parseoni,2022,Post-Monsoon,85.2,21.38
+Parseoni,2022,Pre-Monsoon,8.5,33.58
+Parseoni,2022,Winter,51.5,19.51
+Parseoni,2023,Monsoon,1155.3,28.48
+Parseoni,2023,Post-Monsoon,41.8,22.43
+Parseoni,2023,Pre-Monsoon,135.4,30.36
+Parseoni,2023,Winter,17.7,20.53
+Parseoni,2024,Monsoon,1364.6,28.1
+Parseoni,2024,Post-Monsoon,49.4,22.73
+Parseoni,2024,Pre-Monsoon,120.2,31.32
+Parseoni,2024,Winter,37.8,20.49
+Umred,2010,Monsoon,1386.2,28.5
+Umred,2010,Post-Monsoon,100.0,23.93
+Umred,2010,Pre-Monsoon,12.3,34.58
+Umred,2010,Winter,29.0,21.34
+Umred,2011,Monsoon,1004.8,27.79
+Umred,2011,Post-Monsoon,2.9,23.13
+Umred,2011,Pre-Monsoon,77.0,32.62
+Umred,2011,Winter,14.0,20.89
+Umred,2012,Monsoon,1268.6,27.74
+Umred,2012,Post-Monsoon,35.2,22.83
+Umred,2012,Pre-Monsoon,5.6,33.49
+Umred,2012,Winter,14.7,21.71
+Umred,2013,Monsoon,1513.2,27.11
+Umred,2013,Post-Monsoon,160.3,22.66
+Umred,2013,Pre-Monsoon,28.4,33.57
+Umred,2013,Winter,27.1,21.42
+Umred,2014,Monsoon,892.2,29.16
+Umred,2014,Post-Monsoon,21.1,23.7
+Umred,2014,Pre-Monsoon,65.6,32.18
+Umred,2014,Winter,42.3,20.83
+Umred,2015,Monsoon,1207.6,27.97
+Umred,2015,Post-Monsoon,11.9,24.58
+Umred,2015,Pre-Monsoon,124.6,31.55
+Umred,2015,Winter,32.7,21.91
+Umred,2016,Monsoon,1139.6,28.03
+Umred,2016,Post-Monsoon,71.3,22.09
+Umred,2016,Pre-Monsoon,41.8,34.16
+Umred,2016,Winter,16.4,22.32
+Umred,2017,Monsoon,1034.9,28.21
+Umred,2017,Post-Monsoon,43.6,23.84
+Umred,2017,Pre-Monsoon,41.3,33.74
+Umred,2017,Winter,2.7,21.57
+Umred,2018,Monsoon,975.8,27.2
+Umred,2018,Post-Monsoon,0.9,24.71
+Umred,2018,Pre-Monsoon,52.6,33.66
+Umred,2018,Winter,37.6,21.4
+Umred,2019,Monsoon,1256.4,28.98
+Umred,2019,Post-Monsoon,66.2,22.66
+Umred,2019,Pre-Monsoon,21.9,33.66
+Umred,2019,Winter,39.6,20.04
+Umred,2020,Monsoon,1142.4,27.72
+Umred,2020,Post-Monsoon,68.3,22.74
+Umred,2020,Pre-Monsoon,112.2,31.63
+Umred,2020,Winter,51.6,19.28
+Umred,2021,Monsoon,1049.0,27.79
+Umred,2021,Post-Monsoon,35.1,23.27
+Umred,2021,Pre-Monsoon,62.5,32.12
+Umred,2021,Winter,28.5,21.16
+Umred,2022,Monsoon,1524.7,28.13
+Umred,2022,Post-Monsoon,94.2,21.86
+Umred,2022,Pre-Monsoon,9.6,34.12
+Umred,2022,Winter,76.6,19.97
+Umred,2023,Monsoon,1201.0,28.86
+Umred,2023,Post-Monsoon,42.6,22.76
+Umred,2023,Pre-Monsoon,140.7,31.11
+Umred,2023,Winter,15.2,21.0
+Umred,2024,Monsoon,1413.8,28.47
+Umred,2024,Post-Monsoon,36.2,23.25
+Umred,2024,Pre-Monsoon,116.9,32.18
+Umred,2024,Winter,24.3,21.35
+Kuhi,2010,Monsoon,1386.2,28.5
+Kuhi,2010,Post-Monsoon,100.0,23.93
+Kuhi,2010,Pre-Monsoon,12.3,34.58
+Kuhi,2010,Winter,29.0,21.34
+Kuhi,2011,Monsoon,1004.8,27.79
+Kuhi,2011,Post-Monsoon,2.9,23.13
+Kuhi,2011,Pre-Monsoon,77.0,32.62
+Kuhi,2011,Winter,14.0,20.89
+Kuhi,2012,Monsoon,1268.6,27.74
+Kuhi,2012,Post-Monsoon,35.2,22.83
+Kuhi,2012,Pre-Monsoon,5.6,33.49
+Kuhi,2012,Winter,14.7,21.71
+Kuhi,2013,Monsoon,1513.2,27.11
+Kuhi,2013,Post-Monsoon,160.3,22.66
+Kuhi,2013,Pre-Monsoon,28.4,33.57
+Kuhi,2013,Winter,27.1,21.42
+Kuhi,2014,Monsoon,892.2,29.16
+Kuhi,2014,Post-Monsoon,21.1,23.7
+Kuhi,2014,Pre-Monsoon,65.6,32.18
+Kuhi,2014,Winter,42.3,20.83
+Kuhi,2015,Monsoon,1207.6,27.97
+Kuhi,2015,Post-Monsoon,11.9,24.58
+Kuhi,2015,Pre-Monsoon,124.6,31.55
+Kuhi,2015,Winter,32.7,21.91
+Kuhi,2016,Monsoon,1139.6,28.03
+Kuhi,2016,Post-Monsoon,71.3,22.09
+Kuhi,2016,Pre-Monsoon,41.8,34.16
+Kuhi,2016,Winter,16.4,22.32
+Kuhi,2017,Monsoon,1034.9,28.21
+Kuhi,2017,Post-Monsoon,43.6,23.84
+Kuhi,2017,Pre-Monsoon,41.3,33.74
+Kuhi,2017,Winter,2.7,21.57
+Kuhi,2018,Monsoon,975.8,27.2
+Kuhi,2018,Post-Monsoon,0.9,24.71
+Kuhi,2018,Pre-Monsoon,52.6,33.66
+Kuhi,2018,Winter,37.6,21.4
+Kuhi,2019,Monsoon,1256.4,28.98
+Kuhi,2019,Post-Monsoon,66.2,22.66
+Kuhi,2019,Pre-Monsoon,21.9,33.66
+Kuhi,2019,Winter,39.6,20.04
+Kuhi,2020,Monsoon,1142.4,27.72
+Kuhi,2020,Post-Monsoon,68.3,22.74
+Kuhi,2020,Pre-Monsoon,112.2,31.63
+Kuhi,2020,Winter,51.6,19.28
+Kuhi,2021,Monsoon,1049.0,27.79
+Kuhi,2021,Post-Monsoon,35.1,23.27
+Kuhi,2021,Pre-Monsoon,62.5,32.12
+Kuhi,2021,Winter,28.5,21.16
+Kuhi,2022,Monsoon,1524.7,28.13
+Kuhi,2022,Post-Monsoon,94.2,21.86
+Kuhi,2022,Pre-Monsoon,9.6,34.12
+Kuhi,2022,Winter,76.6,19.97
+Kuhi,2023,Monsoon,1201.0,28.86
+Kuhi,2023,Post-Monsoon,42.6,22.76
+Kuhi,2023,Pre-Monsoon,140.7,31.11
+Kuhi,2023,Winter,15.2,21.0
+Kuhi,2024,Monsoon,1413.8,28.47
+Kuhi,2024,Post-Monsoon,36.2,23.25
+Kuhi,2024,Pre-Monsoon,116.9,32.18
+Kuhi,2024,Winter,24.3,21.35
+Bhiwapur,2010,Monsoon,1386.2,28.5
+Bhiwapur,2010,Post-Monsoon,100.0,23.93
+Bhiwapur,2010,Pre-Monsoon,12.3,34.58
+Bhiwapur,2010,Winter,29.0,21.34
+Bhiwapur,2011,Monsoon,1004.8,27.79
+Bhiwapur,2011,Post-Monsoon,2.9,23.13
+Bhiwapur,2011,Pre-Monsoon,77.0,32.62
+Bhiwapur,2011,Winter,14.0,20.89
+Bhiwapur,2012,Monsoon,1268.6,27.74
+Bhiwapur,2012,Post-Monsoon,35.2,22.83
+Bhiwapur,2012,Pre-Monsoon,5.6,33.49
+Bhiwapur,2012,Winter,14.7,21.71
+Bhiwapur,2013,Monsoon,1513.2,27.11
+Bhiwapur,2013,Post-Monsoon,160.3,22.66
+Bhiwapur,2013,Pre-Monsoon,28.4,33.57
+Bhiwapur,2013,Winter,27.1,21.42
+Bhiwapur,2014,Monsoon,892.2,29.16
+Bhiwapur,2014,Post-Monsoon,21.1,23.7
+Bhiwapur,2014,Pre-Monsoon,65.6,32.18
+Bhiwapur,2014,Winter,42.3,20.83
+Bhiwapur,2015,Monsoon,1207.6,27.97
+Bhiwapur,2015,Post-Monsoon,11.9,24.58
+Bhiwapur,2015,Pre-Monsoon,124.6,31.55
+Bhiwapur,2015,Winter,32.7,21.91
+Bhiwapur,2016,Monsoon,1139.6,28.03
+Bhiwapur,2016,Post-Monsoon,71.3,22.09
+Bhiwapur,2016,Pre-Monsoon,41.8,34.16
+Bhiwapur,2016,Winter,16.4,22.32
+Bhiwapur,2017,Monsoon,1034.9,28.21
+Bhiwapur,2017,Post-Monsoon,43.6,23.84
+Bhiwapur,2017,Pre-Monsoon,41.3,33.74
+Bhiwapur,2017,Winter,2.7,21.57
+Bhiwapur,2018,Monsoon,975.8,27.2
+Bhiwapur,2018,Post-Monsoon,0.9,24.71
+Bhiwapur,2018,Pre-Monsoon,52.6,33.66
+Bhiwapur,2018,Winter,37.6,21.4
+Bhiwapur,2019,Monsoon,1256.4,28.98
+Bhiwapur,2019,Post-Monsoon,66.2,22.66
+Bhiwapur,2019,Pre-Monsoon,21.9,33.66
+Bhiwapur,2019,Winter,39.6,20.04
+Bhiwapur,2020,Monsoon,1142.4,27.72
+Bhiwapur,2020,Post-Monsoon,68.3,22.74
+Bhiwapur,2020,Pre-Monsoon,112.2,31.63
+Bhiwapur,2020,Winter,51.6,19.28
+Bhiwapur,2021,Monsoon,1049.0,27.79
+Bhiwapur,2021,Post-Monsoon,35.1,23.27
+Bhiwapur,2021,Pre-Monsoon,62.5,32.12
+Bhiwapur,2021,Winter,28.5,21.16
+Bhiwapur,2022,Monsoon,1524.7,28.13
+Bhiwapur,2022,Post-Monsoon,94.2,21.86
+Bhiwapur,2022,Pre-Monsoon,9.6,34.12
+Bhiwapur,2022,Winter,76.6,19.97
+Bhiwapur,2023,Monsoon,1201.0,28.86
+Bhiwapur,2023,Post-Monsoon,42.6,22.76
+Bhiwapur,2023,Pre-Monsoon,140.7,31.11
+Bhiwapur,2023,Winter,15.2,21.0
+Bhiwapur,2024,Monsoon,1413.8,28.47
+Bhiwapur,2024,Post-Monsoon,36.2,23.25
+Bhiwapur,2024,Pre-Monsoon,116.9,32.18
+Bhiwapur,2024,Winter,24.3,21.35

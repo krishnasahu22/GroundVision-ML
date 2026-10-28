@@ -1,0 +1,78 @@
+{
+  "dataset": {
+    "rows": 748,
+    "rows_total_with_gap_filled": 826,
+    "gap_filled_rows": 78,
+    "tehsils": 14,
+    "year_min": 2010,
+    "year_max": 2024,
+    "target_mean_m": 5.074803475935829,
+    "target_std_m": 2.363223546685272,
+    "target_min_m": 0.0,
+    "target_max_m": 11.8,
+    "median_wells_per_cell": 6.0
+  },
+  "split": {
+    "scheme": "forward-in-time",
+    "train_before_year": 2021,
+    "n_train": 558,
+    "n_test": 190
+  },
+  "baseline": {
+    "mae": 0.8386914383606091,
+    "rmse": 1.0320065741544544,
+    "r2": 0.7863096796897576,
+    "oof_r2_all_rows": 0.7784291235755575
+  },
+  "residual": {
+    "mae": 0.936559165386306,
+    "rmse": 1.142652806252417,
+    "r2": -0.41317608529482897,
+    "residual_std_m": 1.1109772862246778,
+    "corr_observed_vs_modelled_residual_all_rows": 0.4862169104640939,
+    "leave_one_tehsil_out": {
+      "r2_rows": -0.001874385730740169,
+      "tehsil_mean_pearson": 0.6103260178173024,
+      "tehsil_mean_spearman": 0.6747252747252748
+    }
+  },
+  "benchmarks_holdout": {
+    "tehsil_season_climatology": {
+      "mae": 0.7908541163514847,
+      "r2": 0.7773926388452426,
+      "n": 190
+    },
+    "persistence_previous_season": {
+      "mae": 2.752389473684211,
+      "r2": -1.4318963263002331
+    }
+  },
+  "importance": {
+    "baseline": {
+      "temperature_c": 0.31438473365188074,
+      "season_Pre-Monsoon": 0.20780737222562717,
+      "rainfall_mm": 0.16419581282128953,
+      "tehsil_Narkhed": 0.059854225405438444,
+      "tehsil_Umred": 0.05199569499123878,
+      "tehsil_Nagpur Urban": 0.05102150746782329,
+      "tehsil_Mouda": 0.02907033839980602,
+      "tehsil_Kamptee": 0.026966732376833752,
+      "tehsil_Savner": 0.02434857041796661,
+      "rainfall_mm_lag1": 0.0191527706502166
+    },
+    "residual": {
+      "stage_of_extraction_pct": 0.36100526988303977,
+      "irrigation_draft_mm": 0.35869646950229034,
+      "season_Post-Monsoon": 0.09100150837243173,
+      "season_Pre-Monsoon": 0.056551148326248295,
+      "domestic_industrial_draft_mm": 0.051936438219712,
+      "season_Monsoon": 0.04696300060430825,
+      "season_Winter": 0.03384616509196962
+    }
+  },
+  "thresholds": {
+    "q25": -0.4745,
+    "q50": -0.29500000000000004,
+    "q75": 0.09
+  }
+}

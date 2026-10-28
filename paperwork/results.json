@@ -1,0 +1,786 @@
+{
+ "metrics": {
+  "dataset": {
+   "rows": 748,
+   "rows_total_with_gap_filled": 826,
+   "gap_filled_rows": 78,
+   "tehsils": 14,
+   "year_min": 2010,
+   "year_max": 2024,
+   "target_mean_m": 5.074803475935829,
+   "target_std_m": 2.363223546685272,
+   "target_min_m": 0.0,
+   "target_max_m": 11.8,
+   "median_wells_per_cell": 6.0
+  },
+  "split": {
+   "scheme": "forward-in-time",
+   "train_before_year": 2021,
+   "n_train": 558,
+   "n_test": 190
+  },
+  "baseline": {
+   "mae": 0.8386914383606091,
+   "rmse": 1.0320065741544544,
+   "r2": 0.7863096796897576,
+   "oof_r2_all_rows": 0.7784291235755575
+  },
+  "residual": {
+   "mae": 0.936559165386306,
+   "rmse": 1.142652806252417,
+   "r2": -0.41317608529482897,
+   "residual_std_m": 1.1109772862246778,
+   "corr_observed_vs_modelled_residual_all_rows": 0.4862169104640939,
+   "leave_one_tehsil_out": {
+    "r2_rows": -0.001874385730740169,
+    "tehsil_mean_pearson": 0.6103260178173024,
+    "tehsil_mean_spearman": 0.6747252747252748
+   }
+  },
+  "benchmarks_holdout": {
+   "tehsil_season_climatology": {
+    "mae": 0.7908541163514847,
+    "r2": 0.7773926388452426,
+    "n": 190
+   },
+   "persistence_previous_season": {
+    "mae": 2.752389473684211,
+    "r2": -1.4318963263002331
+   }
+  },
+  "importance": {
+   "baseline": {
+    "temperature_c": 0.31438473365188074,
+    "season_Pre-Monsoon": 0.20780737222562717,
+    "rainfall_mm": 0.16419581282128953,
+    "tehsil_Narkhed": 0.059854225405438444,
+    "tehsil_Umred": 0.05199569499123878,
+    "tehsil_Nagpur Urban": 0.05102150746782329,
+    "tehsil_Mouda": 0.02907033839980602,
+    "tehsil_Kamptee": 0.026966732376833752,
+    "tehsil_Savner": 0.02434857041796661,
+    "rainfall_mm_lag1": 0.0191527706502166
+   },
+   "residual": {
+    "stage_of_extraction_pct": 0.36100526988303977,
+    "irrigation_draft_mm": 0.35869646950229034,
+    "season_Post-Monsoon": 0.09100150837243173,
+    "season_Pre-Monsoon": 0.056551148326248295,
+    "domestic_industrial_draft_mm": 0.051936438219712,
+    "season_Monsoon": 0.04696300060430825,
+    "season_Winter": 0.03384616509196962
+   }
+  },
+  "thresholds": {
+   "q25": -0.4745,
+   "q50": -0.29500000000000004,
+   "q75": 0.09
+  }
+ },
+ "scenarios": [
+  {
+   "scenario": "No intervention",
+   "counts": {
+    "Safe": 4,
+    "Semi-Critical": 3,
+    "Critical": 3,
+    "Over-Exploited": 4
+   },
+   "nu_depth_1y": 3.450869721899132,
+   "nu_depth_10y": 3.450869721899132
+  },
+  {
+   "scenario": "Rainfall \u221220%",
+   "counts": {
+    "Safe": 4,
+    "Semi-Critical": 3,
+    "Critical": 3,
+    "Over-Exploited": 4
+   },
+   "nu_depth_1y": 3.5432501936397025,
+   "nu_depth_10y": 3.5432501936397025
+  },
+  {
+   "scenario": "Borewell growth +10%/yr",
+   "counts": {
+    "Safe": 2,
+    "Semi-Critical": 4,
+    "Critical": 3,
+    "Over-Exploited": 5
+   },
+   "nu_depth_1y": 3.555807666013,
+   "nu_depth_10y": 3.7530464428290222
+  },
+  {
+   "scenario": "Drip adoption 50%",
+   "counts": {
+    "Safe": 8,
+    "Semi-Critical": 2,
+    "Critical": 2,
+    "Over-Exploited": 2
+   },
+   "nu_depth_1y": 3.1720076418610588,
+   "nu_depth_10y": 3.1720076418610588
+  },
+  {
+   "scenario": "Drip 50% + borewell +10%/yr",
+   "counts": {
+    "Safe": 8,
+    "Semi-Critical": 2,
+    "Critical": 2,
+    "Over-Exploited": 2
+   },
+   "nu_depth_1y": 3.1720076418610588,
+   "nu_depth_10y": 3.6523131843979098
+  }
+ ],
+ "sensitivity": [
+  {
+   "slider": "Rainfall \u221220%",
+   "mean": 0.11065148082344692,
+   "min": 0.0695590030712454,
+   "max": 0.1810898200185802,
+   "stage1": 0.11065148082344692,
+   "stage2": 0.0
+  },
+  {
+   "slider": "Rainfall \u221250%",
+   "mean": 0.32317213662307565,
+   "min": 0.16854512687813994,
+   "max": 0.4492961593480862,
+   "stage1": 0.32317213662307565,
+   "stage2": 0.0
+  },
+  {
+   "slider": "Rainfall +30%",
+   "mean": -0.20548458497602734,
+   "min": -0.597441264700671,
+   "max": -0.05694176765438819,
+   "stage1": 0.20548458497602734,
+   "stage2": 0.0
+  },
+  {
+   "slider": "Borewell growth +20%/yr",
+   "mean": 0.13778451849407022,
+   "min": 0.0074349929857433494,
+   "max": 0.43786909567051513,
+   "stage1": 0.0,
+   "stage2": 0.13778451849407022
+  },
+  {
+   "slider": "Drip adoption 50%",
+   "mean": -0.29344821946035626,
+   "min": -0.7497029618931554,
+   "max": -0.033871030283084025,
+   "stage1": 0.0,
+   "stage2": 0.29344821946035615
+  },
+  {
+   "slider": "Drip adoption 100%",
+   "mean": -0.6607377922219733,
+   "min": -1.1646097246517702,
+   "max": -0.033871030283084025,
+   "stage1": 0.0,
+   "stage2": 0.6607377922219733
+  }
+ ],
+ "data": {
+  "well_rows_total": 10873,
+  "wells_unique": 324,
+  "panel_rows": 748,
+  "panel_rows_total": 826,
+  "gap_filled_rows": 78,
+  "rows_per_tehsil": {
+   "Bhiwapur": 39,
+   "Hingna": 56,
+   "Kalmeshwar": 56,
+   "Kamptee": 55,
+   "Katol": 55,
+   "Kuhi": 42,
+   "Mouda": 53,
+   "Nagpur Rural": 55,
+   "Nagpur Urban": 57,
+   "Narkhed": 56,
+   "Parseoni": 56,
+   "Ramtek": 56,
+   "Savner": 56,
+   "Umred": 56
+  },
+  "rows_per_year": {
+   "2010": 40,
+   "2011": 49,
+   "2012": 51,
+   "2013": 52,
+   "2014": 53,
+   "2015": 54,
+   "2016": 54,
+   "2017": 53,
+   "2018": 56,
+   "2019": 54,
+   "2020": 42,
+   "2021": 42,
+   "2022": 54,
+   "2023": 53,
+   "2024": 41
+  },
+  "median_wells_per_cell": 6.0,
+  "annual_rain_mean_mm": 1267.164761904762,
+  "annual_rain_range_mm": [
+   957.8571428571429,
+   1621.5928571428574
+  ],
+  "mean_depth_by_year": {
+   "2010": 5.213982151231705,
+   "2013": 4.645565189093314,
+   "2014": 4.692590007215007,
+   "2015": 5.075364972643098,
+   "2016": 5.401371081349207,
+   "2017": 5.821758830785616,
+   "2018": 5.931803571428572,
+   "2019": 5.99231855609668,
+   "2020": 5.060354599913976,
+   "2021": 4.8878906792446974,
+   "2022": 4.585549652777778,
+   "2023": 4.782248119588745,
+   "2024": 4.622588594160469,
+   "2011": 5.031297477202285,
+   "2012": 5.298643438185746
+  }
+ },
+ "status": [
+  {
+   "tehsil": "Nagpur Urban",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 3.451,
+   "latest_baseline_pred_m": 4.013,
+   "latest_human_residual_m": -0.562,
+   "natural_change_m": -0.003,
+   "human_change_m": -0.126,
+   "total_change_m": -0.129,
+   "natural_pct": 2.2,
+   "human_pct": 97.8,
+   "risk_category": "Safe"
+  },
+  {
+   "tehsil": "Nagpur Rural",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 4.283,
+   "latest_baseline_pred_m": 5.217,
+   "latest_human_residual_m": -0.332,
+   "natural_change_m": -0.154,
+   "human_change_m": 0.103,
+   "total_change_m": -0.05,
+   "natural_pct": 59.8,
+   "human_pct": 40.2,
+   "risk_category": "Semi-Critical"
+  },
+  {
+   "tehsil": "Kamptee",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 4.458,
+   "latest_baseline_pred_m": 5.019,
+   "latest_human_residual_m": -0.192,
+   "natural_change_m": -0.024,
+   "human_change_m": -0.216,
+   "total_change_m": -0.241,
+   "natural_pct": 10.0,
+   "human_pct": 90.0,
+   "risk_category": "Critical"
+  },
+  {
+   "tehsil": "Hingna",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 4.285,
+   "latest_baseline_pred_m": 5.101,
+   "latest_human_residual_m": -0.273,
+   "natural_change_m": -0.144,
+   "human_change_m": -0.265,
+   "total_change_m": -0.409,
+   "natural_pct": 35.2,
+   "human_pct": 64.8,
+   "risk_category": "Critical"
+  },
+  {
+   "tehsil": "Katol",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 5.2,
+   "latest_baseline_pred_m": 5.168,
+   "latest_human_residual_m": 0.696,
+   "natural_change_m": -0.003,
+   "human_change_m": 0.079,
+   "total_change_m": 0.076,
+   "natural_pct": 3.4,
+   "human_pct": 96.6,
+   "risk_category": "Over-Exploited"
+  },
+  {
+   "tehsil": "Narkhed",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 6.358,
+   "latest_baseline_pred_m": 6.142,
+   "latest_human_residual_m": 0.556,
+   "natural_change_m": -0.035,
+   "human_change_m": 0.047,
+   "total_change_m": 0.012,
+   "natural_pct": 42.8,
+   "human_pct": 57.2,
+   "risk_category": "Over-Exploited"
+  },
+  {
+   "tehsil": "Savner",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 6.003,
+   "latest_baseline_pred_m": 5.67,
+   "latest_human_residual_m": 0.466,
+   "natural_change_m": -0.161,
+   "human_change_m": -0.002,
+   "total_change_m": -0.163,
+   "natural_pct": 98.7,
+   "human_pct": 1.3,
+   "risk_category": "Over-Exploited"
+  },
+  {
+   "tehsil": "Kalmeshwar",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 5.573,
+   "latest_baseline_pred_m": 5.361,
+   "latest_human_residual_m": 0.184,
+   "natural_change_m": -0.172,
+   "human_change_m": -0.281,
+   "total_change_m": -0.453,
+   "natural_pct": 38.0,
+   "human_pct": 62.0,
+   "risk_category": "Over-Exploited"
+  },
+  {
+   "tehsil": "Ramtek",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 4.247,
+   "latest_baseline_pred_m": 4.835,
+   "latest_human_residual_m": -0.534,
+   "natural_change_m": -0.141,
+   "human_change_m": -0.006,
+   "total_change_m": -0.147,
+   "natural_pct": 96.0,
+   "human_pct": 4.0,
+   "risk_category": "Safe"
+  },
+  {
+   "tehsil": "Mouda",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 3.954,
+   "latest_baseline_pred_m": 4.471,
+   "latest_human_residual_m": -0.818,
+   "natural_change_m": -0.214,
+   "human_change_m": -0.426,
+   "total_change_m": -0.64,
+   "natural_pct": 33.5,
+   "human_pct": 66.5,
+   "risk_category": "Safe"
+  },
+  {
+   "tehsil": "Parseoni",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 5.182,
+   "latest_baseline_pred_m": 5.364,
+   "latest_human_residual_m": -0.317,
+   "natural_change_m": -0.037,
+   "human_change_m": -0.281,
+   "total_change_m": -0.318,
+   "natural_pct": 11.7,
+   "human_pct": 88.3,
+   "risk_category": "Semi-Critical"
+  },
+  {
+   "tehsil": "Umred",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 2.975,
+   "latest_baseline_pred_m": 3.907,
+   "latest_human_residual_m": -0.489,
+   "natural_change_m": -0.001,
+   "human_change_m": -0.139,
+   "total_change_m": -0.14,
+   "natural_pct": 0.5,
+   "human_pct": 99.5,
+   "risk_category": "Safe"
+  },
+  {
+   "tehsil": "Kuhi",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 5.687,
+   "latest_baseline_pred_m": 5.323,
+   "latest_human_residual_m": -0.231,
+   "natural_change_m": -0.148,
+   "human_change_m": -0.602,
+   "total_change_m": -0.75,
+   "natural_pct": 19.7,
+   "human_pct": 80.3,
+   "risk_category": "Critical"
+  },
+  {
+   "tehsil": "Bhiwapur",
+   "first_year": 2010,
+   "last_year": 2024,
+   "latest_observed_water_table_m": 4.219,
+   "latest_baseline_pred_m": 5.211,
+   "latest_human_residual_m": -0.431,
+   "natural_change_m": -0.094,
+   "human_change_m": 0.13,
+   "total_change_m": 0.035,
+   "natural_pct": 42.2,
+   "human_pct": 57.8,
+   "risk_category": "Semi-Critical"
+  }
+ ],
+ "snapshots": [
+  {
+   "tehsil": "Bhiwapur",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 79.47,
+   "irrigation_draft_mm": 30.71,
+   "domestic_industrial_draft_mm": 6.78,
+   "stage_of_extraction_pct": 45.12
+  },
+  {
+   "tehsil": "Hingna",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 135.45,
+   "irrigation_draft_mm": 55.05,
+   "domestic_industrial_draft_mm": 6.41,
+   "stage_of_extraction_pct": 42.8
+  },
+  {
+   "tehsil": "Kalmeshwar",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 141.9,
+   "irrigation_draft_mm": 106.06,
+   "domestic_industrial_draft_mm": 4.71,
+   "stage_of_extraction_pct": 69.85
+  },
+  {
+   "tehsil": "Kamptee",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 97.78,
+   "irrigation_draft_mm": 63.14,
+   "domestic_industrial_draft_mm": 6.49,
+   "stage_of_extraction_pct": 43.52
+  },
+  {
+   "tehsil": "Katol",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 124.24,
+   "irrigation_draft_mm": 137.42,
+   "domestic_industrial_draft_mm": 7.62,
+   "stage_of_extraction_pct": 86.57
+  },
+  {
+   "tehsil": "Kuhi",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 88.13,
+   "irrigation_draft_mm": 65.53,
+   "domestic_industrial_draft_mm": 5.03,
+   "stage_of_extraction_pct": 69.08
+  },
+  {
+   "tehsil": "Mouda",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 80.63,
+   "irrigation_draft_mm": 47.3,
+   "domestic_industrial_draft_mm": 5.78,
+   "stage_of_extraction_pct": 30.65
+  },
+  {
+   "tehsil": "Nagpur Urban",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 122.51,
+   "irrigation_draft_mm": 35.78,
+   "domestic_industrial_draft_mm": 5.49,
+   "stage_of_extraction_pct": 32.5
+  },
+  {
+   "tehsil": "Nagpur Rural",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 122.51,
+   "irrigation_draft_mm": 35.78,
+   "domestic_industrial_draft_mm": 5.49,
+   "stage_of_extraction_pct": 32.5
+  },
+  {
+   "tehsil": "Narkhed",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 117.06,
+   "irrigation_draft_mm": 114.67,
+   "domestic_industrial_draft_mm": 3.96,
+   "stage_of_extraction_pct": 77.78
+  },
+  {
+   "tehsil": "Parseoni",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 78.48,
+   "irrigation_draft_mm": 48.57,
+   "domestic_industrial_draft_mm": 5.76,
+   "stage_of_extraction_pct": 33.98
+  },
+  {
+   "tehsil": "Ramtek",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 83.5,
+   "irrigation_draft_mm": 30.86,
+   "domestic_industrial_draft_mm": 6.72,
+   "stage_of_extraction_pct": 35.74
+  },
+  {
+   "tehsil": "Savner",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 83.52,
+   "irrigation_draft_mm": 76.63,
+   "domestic_industrial_draft_mm": 5.44,
+   "stage_of_extraction_pct": 74.45
+  },
+  {
+   "tehsil": "Umred",
+   "snapshot_year": 2011,
+   "rain_recharge_mm": 118.19,
+   "irrigation_draft_mm": 46.9,
+   "domestic_industrial_draft_mm": 8.21,
+   "stage_of_extraction_pct": 43.16
+  },
+  {
+   "tehsil": "Mouda",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 63.11,
+   "irrigation_draft_mm": 25.13,
+   "domestic_industrial_draft_mm": 13.9,
+   "stage_of_extraction_pct": 27.7
+  },
+  {
+   "tehsil": "Bhiwapur",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 64.3,
+   "irrigation_draft_mm": 30.54,
+   "domestic_industrial_draft_mm": 7.56,
+   "stage_of_extraction_pct": 52.7
+  },
+  {
+   "tehsil": "Hingna",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 109.87,
+   "irrigation_draft_mm": 43.12,
+   "domestic_industrial_draft_mm": 13.77,
+   "stage_of_extraction_pct": 47.6
+  },
+  {
+   "tehsil": "Kalmeshwar",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 113.35,
+   "irrigation_draft_mm": 73.22,
+   "domestic_industrial_draft_mm": 10.08,
+   "stage_of_extraction_pct": 58.2
+  },
+  {
+   "tehsil": "Kamptee",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 66.29,
+   "irrigation_draft_mm": 38.84,
+   "domestic_industrial_draft_mm": 20.72,
+   "stage_of_extraction_pct": 41.6
+  },
+  {
+   "tehsil": "Katol",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 112.42,
+   "irrigation_draft_mm": 95.24,
+   "domestic_industrial_draft_mm": 17.07,
+   "stage_of_extraction_pct": 70.8
+  },
+  {
+   "tehsil": "Kuhi",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 78.43,
+   "irrigation_draft_mm": 41.52,
+   "domestic_industrial_draft_mm": 9.05,
+   "stage_of_extraction_pct": 58.1
+  },
+  {
+   "tehsil": "Nagpur Urban",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 101.53,
+   "irrigation_draft_mm": 39.67,
+   "domestic_industrial_draft_mm": 12.85,
+   "stage_of_extraction_pct": 46.5
+  },
+  {
+   "tehsil": "Nagpur Rural",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 101.53,
+   "irrigation_draft_mm": 39.67,
+   "domestic_industrial_draft_mm": 12.85,
+   "stage_of_extraction_pct": 46.5
+  },
+  {
+   "tehsil": "Narkhed",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 108.58,
+   "irrigation_draft_mm": 80.21,
+   "domestic_industrial_draft_mm": 13.5,
+   "stage_of_extraction_pct": 64.4
+  },
+  {
+   "tehsil": "Parseoni",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 65.81,
+   "irrigation_draft_mm": 35.16,
+   "domestic_industrial_draft_mm": 15.32,
+   "stage_of_extraction_pct": 36.5
+  },
+  {
+   "tehsil": "Ramtek",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 73.35,
+   "irrigation_draft_mm": 22.16,
+   "domestic_industrial_draft_mm": 14.07,
+   "stage_of_extraction_pct": 38.1
+  },
+  {
+   "tehsil": "Savner",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 66.27,
+   "irrigation_draft_mm": 48.15,
+   "domestic_industrial_draft_mm": 12.41,
+   "stage_of_extraction_pct": 69.3
+  },
+  {
+   "tehsil": "Umred",
+   "snapshot_year": 2023,
+   "rain_recharge_mm": 97.93,
+   "irrigation_draft_mm": 28.35,
+   "domestic_industrial_draft_mm": 13.16,
+   "stage_of_extraction_pct": 37.1
+  },
+  {
+   "tehsil": "Katol",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 111.61,
+   "irrigation_draft_mm": 95.24,
+   "domestic_industrial_draft_mm": 17.07,
+   "stage_of_extraction_pct": 67.3
+  },
+  {
+   "tehsil": "Bhiwapur",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 63.78,
+   "irrigation_draft_mm": 30.54,
+   "domestic_industrial_draft_mm": 7.56,
+   "stage_of_extraction_pct": 51.5
+  },
+  {
+   "tehsil": "Hingna",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 108.68,
+   "irrigation_draft_mm": 43.14,
+   "domestic_industrial_draft_mm": 13.78,
+   "stage_of_extraction_pct": 47.3
+  },
+  {
+   "tehsil": "Kalmeshwar",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 110.93,
+   "irrigation_draft_mm": 73.22,
+   "domestic_industrial_draft_mm": 10.08,
+   "stage_of_extraction_pct": 55.6
+  },
+  {
+   "tehsil": "Kamptee",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 69.1,
+   "irrigation_draft_mm": 44.86,
+   "domestic_industrial_draft_mm": 18.81,
+   "stage_of_extraction_pct": 50.1
+  },
+  {
+   "tehsil": "Kuhi",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 77.76,
+   "irrigation_draft_mm": 41.52,
+   "domestic_industrial_draft_mm": 9.05,
+   "stage_of_extraction_pct": 56.7
+  },
+  {
+   "tehsil": "Mouda",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 63.14,
+   "irrigation_draft_mm": 25.13,
+   "domestic_industrial_draft_mm": 13.9,
+   "stage_of_extraction_pct": 27.5
+  },
+  {
+   "tehsil": "Nagpur Rural",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 102.12,
+   "irrigation_draft_mm": 40.24,
+   "domestic_industrial_draft_mm": 13.05,
+   "stage_of_extraction_pct": 45.4
+  },
+  {
+   "tehsil": "Narkhed",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 106.99,
+   "irrigation_draft_mm": 80.21,
+   "domestic_industrial_draft_mm": 13.51,
+   "stage_of_extraction_pct": 63.3
+  },
+  {
+   "tehsil": "Parseoni",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 67.84,
+   "irrigation_draft_mm": 35.16,
+   "domestic_industrial_draft_mm": 15.35,
+   "stage_of_extraction_pct": 36.1
+  },
+  {
+   "tehsil": "Ramtek",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 73.09,
+   "irrigation_draft_mm": 22.16,
+   "domestic_industrial_draft_mm": 14.08,
+   "stage_of_extraction_pct": 37.4
+  },
+  {
+   "tehsil": "Savner",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 66.56,
+   "irrigation_draft_mm": 48.15,
+   "domestic_industrial_draft_mm": 12.41,
+   "stage_of_extraction_pct": 67.1
+  },
+  {
+   "tehsil": "Umred",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 97.48,
+   "irrigation_draft_mm": 28.35,
+   "domestic_industrial_draft_mm": 13.16,
+   "stage_of_extraction_pct": 35.7
+  },
+  {
+   "tehsil": "Nagpur Urban",
+   "snapshot_year": 2024,
+   "rain_recharge_mm": 68.14,
+   "irrigation_draft_mm": 27.76,
+   "domestic_industrial_draft_mm": 21.31,
+   "stage_of_extraction_pct": 31.3
+  }
+ ]
+}
