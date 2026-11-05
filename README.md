@@ -15,6 +15,7 @@ Groundwater governance dashboard for Nagpur district, separating natural climate
 - **FastAPI REST Service** (`src/api.py`):
   - `GET /api/tehsils`: Serves baseline scores, risk categories, attribution splits, and drawdown curves for all 14 tehsils without retraining.
   - `POST /api/simulate`: Runs scenario inference with `{rainfall, drip, borewell, tehsil_id}` and returns updated projections and district-wide scores.
+  - `GET /api/report?tehsil=<id>&rainfall=&drip=&borewell=`: Builds a real PDF report (omit `tehsil` for a district-wide report) from the model's own outputs: today's status, the chosen scenario, the no-change reference, charts, and an accuracy-and-limits section. The dashboard's Reports view and "Export report" button download it.
   - `GET /`: Serves the live web dashboard.
 - **Frontend Dashboard** (`frontend/` — separated `index.html` + `styles.css` + `app.js`, no logo, no 3D):
   - Interactive choropleth map of Nagpur's 14 tehsils.

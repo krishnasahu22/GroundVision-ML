@@ -225,14 +225,16 @@ function showToast(msg, tone) {
   const el = document.createElement("div");
   el.className = "toast";
   const iconOk = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>';
-  el.innerHTML = iconOk + "<span>" + msg + "</span>";
+  const iconErr = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 8v5M12 16.5v.5"/><circle cx="12" cy="12" r="9"/></svg>';
+  if (tone === "error") el.classList.add("error");
+  el.innerHTML = (tone === "error" ? iconErr : iconOk) + "<span>" + msg + "</span>";
   stack.appendChild(el);
   setTimeout(() => {
     el.style.transition = "opacity 200ms ease, transform 200ms ease";
     el.style.opacity = "0";
     el.style.transform = "translateY(6px)";
     setTimeout(() => el.remove(), 220);
-  }, 2600);
+  }, tone === "error" ? 5200 : 2600);
 }
 
 function openModal(html) {
@@ -585,6 +587,36 @@ document.getElementById("open-in-sandbox-btn").addEventListener("click", () => {
 /* ============================================================
    REPORTS
    ============================================================ */
+function reportQuery(rep) {
+  const q = new URLSearchParams({ rainfall: rep.params.rainfall, drip: rep.params.drip, borewell: rep.params.borewell });
+  if (rep.params.tehsilId) q.set("tehsil", rep.params.tehsilId);
+  return q.toString();
+}
+/* Downloads a real PDF built by the model server (GET /api/report). Nothing is faked: if the
+   server cannot produce the file the user sees the error instead of a "Downloaded" message. */
+async function downloadReport(rep) {
+  showToast("Preparing " + rep.file + "...");
+  try {
+    const res = await fetch(API_BASE + "/api/report?" + reportQuery(rep));
+    if (!res.ok) {
+      let detail = "HTTP " + res.status;
+      try { detail = (await res.json()).detail || detail; } catch (e) { /* not JSON */ }
+      throw new Error(detail);
+    }
+    const blob = await res.blob();
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = rep.file;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    showToast("Downloaded " + rep.file);
+  } catch (err) {
+    console.error("Report download failed:", err);
+    showToast("Could not create the PDF: " + err.message, "error");
+  }
+}
 function renderReports() {
   const el = document.getElementById("reports-list");
   if (state.reports.length === 0) {
@@ -602,9 +634,7 @@ function renderReports() {
     '</div></div>'
   ).join("");
   el.querySelectorAll("[data-act='view']").forEach((btn) => btn.addEventListener("click", () => viewReport(+btn.dataset.idx)));
-  el.querySelectorAll("[data-act='dl']").forEach((btn) => btn.addEventListener("click", () => {
-    showToast("Downloaded " + state.reports[+btn.dataset.idx].file);
-  }));
+  el.querySelectorAll("[data-act='dl']").forEach((btn) => btn.addEventListener("click", () => downloadReport(state.reports[+btn.dataset.idx])));
 }
 function viewReport(idx) {
   const r = state.reports[idx];
@@ -612,32 +642,46 @@ function viewReport(idx) {
     '<div class="modal-head"><span class="modal-title">' + r.title + '</span>' +
     '<button class="modal-close" onclick="document.getElementById(\'modal-overlay\').classList.remove(\'open\')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>' +
     '<div class="modal-row"><span>Scope</span><span>' + r.scope + '</span></div>' +
-    '<div class="modal-row"><span>Risk category</span><span>' + r.risk + '</span></div>' +
+    '<div class="modal-row"><span>Risk category today</span><span>' + r.risk + '</span></div>' +
     '<div class="modal-row"><span>Human share</span><span>' + r.humanPct + '%</span></div>' +
+    '<div class="modal-row"><span>Scenario</span><span>' + r.scenario + '</span></div>' +
     '<div class="modal-row"><span>Generated</span><span>' + r.date + '</span></div>' +
     '<div class="modal-foot"><button class="btn btn-primary btn-block" id="modal-dl-btn">Download PDF</button></div>'
   );
   document.getElementById("modal-dl-btn").addEventListener("click", () => {
     closeModal();
-    showToast("Downloaded " + r.file);
+    downloadReport(r);
   });
 }
+/* Reports are built from the model server only. Without it there is nothing true to report,
+   so we refuse instead of falling back to the front-end preview numbers. */
 function addReport(tehsilId) {
+  if (!state.apiConnected || !state.baselineData || Object.keys(state.baselineData).length === 0) {
+    showToast("Reports need the model server. Start it with: uvicorn src.api:app", "error");
+    return null;
+  }
   let scope = "District-wide";
   let risk = "Mixed";
-  let humanPct = Math.round(TEHSILS.reduce((a, t) => a + scoreParts(t, null).humanPct, 0) / TEHSILS.length);
-  if (tehsilId) {
-    const t = TEHSILS.find((x) => x.id === tehsilId);
-    const parts = scoreParts(t, null);
-    scope = t.name;
-    risk = RISK[riskKey(parts.score)].label;
-    humanPct = parts.humanPct;
+  let humanPct;
+  const rows = Object.values(state.baselineData);
+  const known = !!(tehsilId && state.baselineData[tehsilId]);
+  if (known) {
+    const b = state.baselineData[tehsilId];
+    scope = b.name;
+    risk = b.risk_category;
+    humanPct = Math.round(b.human_pct);
+  } else {
+    humanPct = Math.round(rows.reduce((a, b) => a + b.human_pct, 0) / rows.length);
   }
+  const sl = state.sliders;
+  const changed = sl.rainfall !== 0 || sl.drip !== 0 || sl.borewell !== 0;
   const today = new Date();
   const dateStr = today.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
   const rep = {
     title: scope + " outlook, " + dateStr,
     date: dateStr, scope: scope, risk: risk, humanPct: humanPct,
+    scenario: changed ? ("rainfall " + fmtPct(sl.rainfall) + ", drip " + sl.drip + "%, borewells " + fmtPct(sl.borewell) + "/yr") : "none (today)",
+    params: { tehsilId: known ? tehsilId : "", rainfall: sl.rainfall, drip: sl.drip, borewell: sl.borewell },
     status: "Ready", file: "GroundVision_ML_" + scope.replace(/[^a-zA-Z0-9]+/g, "_") + ".pdf"
   };
   state.reports.unshift(rep);
@@ -645,13 +689,14 @@ function addReport(tehsilId) {
   return rep;
 }
 document.getElementById("generate-report-btn").addEventListener("click", () => {
-  addReport(state.selectedTehsil);
-  showToast("Report generated");
+  const rep = addReport(state.selectedTehsil);
+  if (rep) showToast("Report ready to download");
 });
 document.getElementById("export-report-btn").addEventListener("click", () => {
-  addReport(state.selectedTehsil);
+  const rep = addReport(state.selectedTehsil);
+  if (!rep) return;
   switchView("reports");
-  showToast("Report generated");
+  downloadReport(rep);
 });
 
 /* ============================================================

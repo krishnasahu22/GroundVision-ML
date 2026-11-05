@@ -8,13 +8,15 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 import pandas as pd
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
+from starlette.concurrency import run_in_threadpool
 from pydantic import BaseModel, Field
 
-from src.config import PROCESSED_DIR, RISK_CATEGORIES, ROOT_DIR, TEHSIL_NAMES
+from src.config import BRAND_NAME, PROCESSED_DIR, RISK_CATEGORIES, ROOT_DIR, TEHSIL_NAMES
 from src.risk import classify
+from src.report import build_report_pdf
 from src.simulate import (
     ModelBundle,
     SandboxInputs,
@@ -426,6 +428,38 @@ async def simulate(req: SimulateRequest):
         },
         "all_tehsils": all_tehsils,
     }
+
+
+@app.get("/api/report")
+async def report(
+    tehsil: Optional[str] = Query(None, description="Tehsil slug id; omit for a district-wide report"),
+    rainfall: float = Query(0.0, ge=-100, le=100, description="Rainfall change (%)"),
+    drip: float = Query(0.0, ge=0, le=100, description="Drip-irrigation adoption (%)"),
+    borewell: float = Query(0.0, ge=-50, le=100, description="Borewell growth (%/yr)"),
+):
+    """
+    Builds a real PDF from the model's own outputs: today's status, the selected scenario and the
+    no-change reference, computed by the same code as /api/simulate (never from front-end preview numbers).
+    """
+    ensure_loaded()
+    if tehsil and tehsil not in TEHSIL_ID_TO_NAME:
+        raise HTTPException(status_code=404, detail=f"Unknown tehsil id '{tehsil}'")
+    anchor = tehsil or "nagpur-urban"
+    payload = await simulate(SimulateRequest(rainfall=rainfall, drip=drip, borewell=borewell, tehsil_id=anchor))
+    base_payload = await simulate(SimulateRequest(rainfall=0.0, drip=0.0, borewell=0.0, tehsil_id=anchor))
+    scope = TEHSIL_DISPLAY_NAMES[tehsil] if tehsil else "District-wide"
+    try:
+        pdf = await run_in_threadpool(
+            build_report_pdf, BRAND_NAME, scope, tehsil, payload, base_payload, state.status_df,
+            {"rainfall": rainfall, "drip": drip, "borewell": borewell}, TEHSIL_DISPLAY_NAMES,
+        )
+    except Exception as exc:  # surface the real cause instead of a fake success
+        raise HTTPException(status_code=500, detail=f"Report generation failed: {exc}") from exc
+    import datetime
+    import re as _re
+    fname = _re.sub(r"[^A-Za-z0-9]+", "_", f"{BRAND_NAME}_{scope}_{datetime.date.today().isoformat()}").strip("_") + ".pdf"
+    return Response(content=pdf, media_type="application/pdf",
+                    headers={"Content-Disposition": f'attachment; filename="{fname}"'})
 
 
 if __name__ == "__main__":

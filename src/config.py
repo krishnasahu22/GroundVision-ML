@@ -61,6 +61,9 @@ LAG_FEATURES = [
 
 TARGET = "observed_water_table_m"
 
+# Product name used in generated reports (src/report.py)
+BRAND_NAME = "GroundVision ML"
+
 # Risk buckets, deliberately using IN-GRES's own category language so the
 # dashboard reads as familiar to district officials rather than inventing
 # new terminology.
