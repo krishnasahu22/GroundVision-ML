@@ -54,7 +54,8 @@ The earlier synthetic panel is kept as `data/processed/nagpur_blocks_synthetic.c
 
 1. Install dependencies:
 ```bash
-pip install -r requirements.txt pymupdf shapely requests
+pip install -r requirements.txt            # runtime only (what Vercel installs)
+pip install -r requirements-pipeline.txt   # extra: rebuild data / retrain / regenerate the thesis
 ```
 
 2. Rebuild the dataset and retrain (the source PDFs are read from `D:/NAKSHA/research-paper`; pass `--src` to change):
@@ -100,3 +101,7 @@ models/                              Persisted joblib model artifacts & risk thr
 data/processed/                      Processed block datasets & summary CSVs
 data/geo/                            Tehsil GeoJSON boundaries
 ```
+
+## Deploying on Vercel
+
+`app.py` exposes the FastAPI `app`, `vercel.json` sets the function timeout, `.vercelignore` keeps the bundle small, `.python-version` selects Python 3.13, and `requirements.txt` holds pinned runtime packages only (scikit-learn must match the version the models were trained with). Import the repo in Vercel, leave the framework on FastAPI/auto-detect, set Root Directory to the folder containing `app.py`, and deploy.

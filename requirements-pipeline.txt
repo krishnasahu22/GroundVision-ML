@@ -1,0 +1,7 @@
+# Only needed to REBUILD the dataset / retrain / regenerate the thesis. Not installed on Vercel.
+-r requirements.txt
+uvicorn>=0.28
+pymupdf>=1.24
+shapely>=2.0
+requests>=2.31
+playwright

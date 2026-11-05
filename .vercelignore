@@ -1,0 +1,15 @@
+# keep the deployed bundle small: none of this is needed at runtime
+paperwork/
+docs/
+scripts/
+data/raw/
+data/processed/nagpur_blocks_synthetic.csv
+data/geo/maharashtra_districts.geojson
+*.zip
+*.docx
+*.pdf
+*.mp4
+__pycache__/
+.git/
+requirements-pipeline.txt
+claude.md
